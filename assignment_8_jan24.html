@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Example</title>
+        <style>
+            span{
+                font-size: 14px;
+            }
+            .header{
+                margin: 5px;
+                border: 1px solid;
+                text-align: center;
+                font-size: 18px;
+            }
+            .main_container{
+                margin: 5px;
+                padding: 5px;
+                border: 1px solid;
+            }
+            .account_details, .educational_details, .address, .about_your_self{
+                margin: 20px;
+                padding: 10px;
+                border: 1px solid;
+                position: relative;
+            }
+            .account_details_header, .educational_details_header, .address_header, .about_your_self_header{
+                margin: 5px;
+                padding: 2px;
+                text-align: center;
+                width: 130px;
+                border: 1px solid;
+                position: absolute;
+                left: 50px;
+                top: -17px;
+                background-color: white;
+            }
+            .educational_details_header{
+                position: absolute;
+                bottom: 50px;
+            }
+            .address_header{
+                position: absolute;
+                bottom: 50px;
+            }
+            .about_your_self_header{
+                position: absolute;
+                bottom: 5px;
+            }
+            .account_details_left{
+                width: 40%;
+                margin: 15px;
+                padding: 5px;
+                border: 1px solid;
+                display: inline-block;
+            }
+            .account_details_right{
+                width: 40%;
+                margin: 15px;
+                padding: 5px;
+                border: 1px solid;
+                float: right;
+            }
+            ul li{
+               list-style: none; 
+            }
+            label, select{
+                display: inline-block;
+                width: 100px;
+                padding: 5px;
+                margin: 5px;
+            }
+            input{
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <p>Student Registration Page</p>
+        </div>
+        <div class="main_container">
+            <form method="get">
+                <div class="account_details">
+                    <div class="account_details_header">
+                        <span>Account Details</span>
+                    </div>
+                    <div class="account_details_left">
+                        <ul style="padding: 0px;">
+                            <li>
+                                <label>Name: </label>
+                                <input type="text"/>
+                            </li>
+                            <li>
+                                <label>Age:</label>
+                                <input type="number" />
+                            </li>
+                            <li>
+                                <label for="gender" name="gender">Gender</label>
+                                <input type="radio" name="gender" value="male"/> Male
+                                <input type="radio" name="gender" value="female"/>Female
+                            </li>
+                            <li>
+                                <label>Email Id</label>
+                                <input type="email" name="email">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="account_details_right">
+                        <ul style="padding: 0px;">
+                            <li>
+                                <label>Account ID</label>
+                                <input type="text" >
+                            </li>
+                            <li>
+                                <label for="">Account Type</label>
+                                <select>
+                                    <option>Select</option>
+                                    <option>Saving Account</option>
+                                    <option>Current Account</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="educational_details">
+                    <div class="educational_details_header">
+                        <span>Education Details</span>
+                    </div>
+                    <div class="account_details_left">
+                        <ul style="padding: 0px;">
+                            <li>
+                                <label>Qualification</label>
+                                <select name="qualification" id="">
+                                    <option value="10th">Matriculation</option>
+                                    <option value="12th">Intermadiate</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="pg">Post-Graduation</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>Languages</label>
+                                <input type="checkbox" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="account_details_right"></div>
+                </div>
+                <div class="address">
+                    <div class="address_header">
+                        <span>Address Details</span>
+                    </div>
+                    <div class="account_details_left"></div>
+                    <div class="account_details_right"></div>
+                </div>
+                <div class="about_your_self">
+                    <div class="about_your_self_header">
+                        <span>About Your Self</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

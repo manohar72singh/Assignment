@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display property</title>
+        <style>
+            .navbar{
+                height: 50px;
+                margin: 2px;
+                padding: 2px;
+                border: 1px solid ;
+            }
+            .nav_list{
+                float: right;
+                text-align: center;
+                margin: 5px;
+                padding: 0px;
+                list-style: none;
+            }
+            .nav_list li{
+                padding: 5px;
+                display: inline-block;
+                width: auto;
+                margin: 5px;
+                border: 1px solid;
+            }
+            .nav_list li:hover{
+                border: 1px solid red;
+                background-color: #ccc;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ol class="nav_list">
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+                <li>More detail</li>
+            </ol>
+        </div>
+    </body>
+</html>
