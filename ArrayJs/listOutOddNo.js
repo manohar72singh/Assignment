@@ -9,5 +9,5 @@ findAllOddNo =(arr) => {
     console.log(oddNo);
 }
 
-var arr =[50,20,1,4,9,15,45,17,23];
+var arr =[50,20,1,4,9,15,45,17,23,171,121];
 findAllOddNo(arr);

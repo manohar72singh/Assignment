@@ -1,19 +1,25 @@
 findAllPrimeNo = (arr) =>{
     var primeNo = [];
+    var index=0
     var count=0;
-    for(var i=0;i<=arr.length;i++){
+    for(var i=0; i<arr.length; i++){
 
-        if(arr[i] % i === 0)
+        for(var j=2; j<arr[i]; j++)
         {
-            count++;
+            if(arr[i] % j == 0)
+            {
+                count++;
+            }
         }
-        if(count === 2)
+        
+        if(count == 0)
         {
-            primeNo.push(arr[i]);
+            primeNo[index]=arr[i];
+            index++;
         }
+        count=0;
     }
     console.log(primeNo);
-    console.log(count)
 }
-var arr =[2,5,3,40,10,11,17,117];
+var arr =[2,5,3,40,10,11,17,117,121,171,127,];
 findAllPrimeNo(arr);

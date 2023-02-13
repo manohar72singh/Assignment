@@ -4,20 +4,22 @@ findPallindrome =(arr)=>{
     var rev =0;
     var temp=0;
     var orgNo=0;
+    var index=0;
     for(var i=0;i<arr.length;i++)
     {
         orgNo=arr[i];
         temp=arr[i];
-        while(temp>0)
+        while(temp > 0)
         {
-            rem= rem%10;
+            rem= temp%10;
             temp=temp/10;
             temp=parseInt(temp);
-            rev=rev*10+rem;
+            rev=(rev*10)+rem;
         }
-        if(rev==parseInt(orgNo))
+        if(rev===parseInt(orgNo))
         {
-            pallindrome[i]=orgNo
+            pallindrome[index]=orgNo
+            index++;
         }
         orgNo=0;
         temp=0;
