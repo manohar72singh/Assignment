@@ -1,0 +1,154 @@
+body {
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .card {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #a3e8df 0%, #f8ea8c 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    flex-grow: 1;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  
+  .field {
+    margin: 10px 0;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+  
+  input {
+    padding: 9px 0px 7px 9px;
+    font-size: 12px;
+    width: 16rem;
+    height: 1.2rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #efefef;
+  }
+  
+  /* label intial position*/
+  
+  label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    padding-bottom: 15px;
+    transform: translateY(10px);
+    line-height: 6px;
+    transition: all ease-out 0.1s;
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+    padding-top: 6px;
+  }
+  
+  /* hiding placeholder in all browsers */
+  
+  input::placeholder {
+    visibility: hidden;
+  }
+  
+  
+  /* label final position */
+  input:not(:placeholder-shown)+label {
+    transform: translateY(0);
+    font-size: 11px;
+  }
+  
+  /* input padding increases if placeholder is not shown */
+  input:not(:placeholder-shown) {
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+  
+  .login-button {
+    text-align: center;
+    border-radius: 12px;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-top: 6px;
+  }
+  
+  .separator .line {
+    height: 1px;
+    width: 40%;
+    background-color: red;
+  }
+  
+  .other {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .create-account-btn, .fb-login-btn {
+    margin: 1rem;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #385185;
+    font-weight: 600;
+    background: transparent;
+  }
+  
+  .forgot-password {
+    font-size: 13px;
+    color: #01274d;
+  }
+  
+  .login, .signup {
+    color: #3897f0;
+    font-weight: 600;
+  }
+  .paragraph{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    display: block;
+    color: rgb(142,142,142);
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 15px;
+    margin:  0px 40px 0px;
+  }
