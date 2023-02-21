@@ -6,13 +6,15 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
-
+/* home css */
 /* css for navbar */
 
 .navbar {
-  background-color: black;
+  background-color: transparent;
   border-radius: 30px;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 
 }
 
@@ -162,13 +164,12 @@ input:not(:placeholder-shown) {
   align-items: center;
 }
 
-.create-account-btn,
-.fb-login-btn {
+.create-account-btn {
   margin: 1rem;
   border: 0;
   cursor: pointer;
   font-size: 14px;
-  color: #385185;
+  color: #01274d;
   font-weight: 600;
   background: transparent;
 }
