@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./crudOperation.css">
+        <script src="./crudOperation.js"></script>
+        <title>Crud Operation</title>
+    </head>
+    <body>
+        <h3>Crud Operation</h3>
+        <div class="container">
+            <div class="registraion_form">
+                <ul class="form">
+                    <li>Student Name: <input type="text" id="sname" required></li>
+                    <li>Age: <input type="number" id="sage" required></li>
+                    <li>Gender: 
+                        <input type="radio" name="gender" value="male" >Male
+                        <input type="radio" name="gender" value="female">Female
+                    </li>
+                    <li>Location: 
+                        <select id="loc" class="select">
+                            <option value="bihar">Bihar</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="mumbai">Mumbail</option>
+                            <option value="kolkata">Kolkata</option>
+                        </select>
+                    </li>
+                    <li><input type="button" value="Ragister" id="reg" onclick="readData();">
+                        <input type="reset" value="Reset" onclick="reset();">
+                    </li>
+                </ul>
+            </div>
+            <div class="show-registraion-form">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Location</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

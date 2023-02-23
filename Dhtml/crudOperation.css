@@ -1,0 +1,55 @@
+*{
+    font-family: cursive;
+}
+h3{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    text-align: center;
+}
+.container{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    overflow: auto;
+}
+.registraion_form{
+    margin: 5px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.form{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    text-align: center ;
+}
+
+li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+input{
+    text-align: center;
+    margin: 2px;
+}
+.select{
+    text-align: center;
+}
+.show-registraion-form{
+    float: right;
+    margin: 5px;
+    border: 1px solid black;
+}
+table{
+    width: 100%;
+}
+table, th, td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
