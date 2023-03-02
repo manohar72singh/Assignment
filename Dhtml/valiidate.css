@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px;
+}
+.vallidate{
+    border: 1px solid;
+   margin:  auto;
+   padding: 15px;
+    width: 450px;
+   
+}
+.vallidate li{
+    border-color: burlywood;
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+}
+.error{
+    border: 1px solid;
+    display: none;
+    margin: 2px;
+    padding:2px;
+    
+}
+.error li{
+    
+    color: red;
+    margin: 2px;
+    padding: 2px;
+    list-style-position: inside;
+   list-style-type: circle;
+}
