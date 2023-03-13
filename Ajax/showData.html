@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery.min.js"></script>
+    <script src="./showData.js"></script>
+    <title>Ajax Example</title>
+    <!-- url="https://manohar72singh.github.io/ISDBdata/SDBdata.json" -->
+</head>
+<body onload="loadState()">
+    <!-- <button onclick="loadData();">Click Hare and show console!!</button> -->
+    <form>
+        select State:
+        <select name="state" id="states" onchange="loaddistrict();">
+            <option value="" selected="selected">Select State</option>
+        </select>
+        Select District:
+        <select name="district" id="district" onchange="loadBlock();">
+            <option value="" selected="selected">Please select State first</option>
+        </select>
+        Select Block:
+        <select name="block" id="block">
+            <option value="" selected="selected">Please Select District First</option>
+        </select>
+    </form>
+</body>
+</html>
