@@ -4,95 +4,158 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./home.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/homeStyle.css">
         <title>Home</title>
-        <style>
-        </style>
     </head>
-    <body class="home">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a>Logo</a>
-                </li>
-                <li>
-                <a href="./home.html">Home</a>
-                </li>
-                <li>
-                <a href="./signIn.html">Login</a>
-                </li>
-                <li>
-                <a href="./signUp.html">Signup</a>
-                </li>
-                <li>
-                <a>Contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </body>
-    <!-- <div class="container">
-        <div class="collection_name"> 
-            <ol style="padding: 0px; margin: 5px;">
-                <li>Men Cloaths</li>
-                <li>Women Cloths</li>
-                <li>Kids Cloaths</li>
-                <li>Men Watches</li>
-                <li>Women Watches</li>
-            </ol>
-        </div>
-        <div class="prodect_view">
-            <div class="card">
-                <div id="card-header">
-                    <h3>T-shirt</h3>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="signIn.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="signUp.html">Signin</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#">
+                        <img
+                            src="https://i.ibb.co/PNjjx3y/cart.png"
+                            alt=""
+                            width="30px"
+                            height="30px"
+                            class="card"
+                        >
+                    </a>
+                    <img
+                        src="https://i.ibb.co/6XbqwjD/menu.png"
+                        alt=""
+                        class="menu-icon"
+                        onclick="menutoggle()"
+                    >
                 </div>
-                <div id="card-body">
-                    <img src="" width="100%" height="200">
-                    <p>&#8377; 999.00</p>
-                </div>
-                <div id="card-footer">
-                    <button><span bi bi-cart4></span>Add to cart</button>
+                <div class="row">
+                    <div class="col-2">
+                        <h1>
+                            Give Your Workout
+                            <br>
+                            A New Style!
+                        </h1>
+                        <p>
+                            Success isn't always about greatness. It's about consistency.
+                            Consistent
+                            <br>
+                            hard work gains success. Greatness will come.
+                        </p>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn"
+                        >Explore Now &#8594;</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://i.ibb.co/QpTmdX5/image1.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
         </div>
-    </div> -->
+        <!-- brands -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="https://i.ibb.co/Gfwzz1S/logo-godrej.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="https://i.ibb.co/vjrRZFM/logo-oppo.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="https://i.ibb.co/3zs234S/logo-coca-cola.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="https://i.ibb.co/7Wt343W/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="https://i.ibb.co/GVSNwJD/logo-philips.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and iso mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="">
+                            <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="">
+                        <p>
+                            Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                Sports Accessible to the Many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright &copy; 2021 - Red Store</p>
+            </div>
+        </div>
+        <!-- js for toggle menu -->
+        <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = '0px';
+      
+        function menutoggle() {
+          if (MenuItems.style.maxHeight == '0px') {
+            MenuItems.style.maxHeight = '200px';
+          } else {
+            MenuItems.style.maxHeight = '0px';
+          }
+        }
+        </script>
+    </body>
 </html>
