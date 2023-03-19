@@ -6,29 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
         <link rel="stylesheet" href="./index.css">
         <title>Index page</title>
     </head>
     <body>
-        <div calss="container"></div>
-        <div class="product-card">
-            <div class="badge">Hot</div>
-            <div class="product-tumb">
-                <img src="https://i.imgur.com/xdbHo4E.png" alt="">
+        <div class="main_container">
+            <div class="container_list">
+                <ul>
+                    <li>Men's Ware</li>
+                    <li>Women's Ware</li>
+                    <li>Kid's Ware</li>
+                </ul>
             </div>
-            <div class="product-details">
-                <span class="product-catagory">Women,bag</span>
-                <h4><a href="">Women leather bag</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-                <div class="product-bottom-details">
-                    <div class="product-price"><small>$96.00</small>$230.99</div>
-                    <div class="product-links">
-                        <a href=""><i class="fa fa-heart"></i></a>
-                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+            <div class="container_item"></div> 
+             <div class="product_container"></div>
+        </div>
+       
+        <!-- TEMPLATE PRODUCT-->
+        <!-- <div class="product_container"></div> -->
+        
+        <div id="tempCard">
+            <div class="product-card">
+                <div class="badge">{{badge}}</div>
+                <div class="product-tumb">
+                    <img src="{{image}}" alt="">
+                </div>
+                <div class="product-details">
+                    <span class="product-catagory">{{category}}</span>
+                    <h4><a href="">{{title}}</a></h4>
+                    <p>{{description}}</p>
+                    <div class="product-bottom-details">
+                        <div class="product-price"><small>$96.00</small>${{price}}</div>
+                        <div class="product-links">
+                            <a href=""><i class="fa fa-heart"></i></a>
+                            <a href=""><i class="fa fa-shopping-cart"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="./index.js"></script>
     </body>
 </html>

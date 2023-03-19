@@ -17,3 +17,13 @@ function setField(){
     inputTag.setAttribute('value', otpNo);
     ulTag.appendChild(liTag);
 }
+
+var badgeList = ["HOT","NEW","TRANDING","BEST SELLER", "TOP BRANDS", "BEST DEELS"];
+var randomPic =(list)=>{
+    var pick = Math.floor(Math.random()* list.length);
+    var item = list[pick]
+    return item;
+    //console.log(pick)
+}
+
+console.log(randomPic(badgeList))

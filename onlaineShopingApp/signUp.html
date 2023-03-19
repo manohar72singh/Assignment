@@ -36,30 +36,36 @@
                     <p>OR</p>
                     <div class="line"></div>
                 </div>
-                <form class="signup_form">
+                <small class="error"></small>
+                <form class="signup_form" action="#">
 
                     <div class="field">
-                        <input type="text"  placeholder="Mobile Number or Email" required/>
-                        <label for="email_phone">Mobile Number or Email</label>
+                        <input type="text" id="mobEmail"  placeholder="Enter Email"/>
+                        <label for="email_phone">Enter Email Id</label>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Full Name" required/>
+                        <input type="text" id="fullName" placeholder="Full Name" />
                         <label for="full_name">Full Name</label>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Username" required/>
+                        <input type="text" id="username" placeholder="Username" />
                         <label for="username">Username</label>
                     </div>
                     <div class="field">
-                        <input type="password" placeholder="Password" required/>
+                        <input type="password" id="password" placeholder="Password" />
                         <label for="password">Password</label>
                     </div>
-                    <button class="login-button" title="login">Sign Up</button>
+                    <div class="field">
+                        <input type="password" id="re-password" placeholder="Confirm Password" />
+                        <label for="password">Confirm Password</label>
+                    </div>
+                    <button class="login-button" id="signup" title="SignUp" onclick="validationSignup();">Sign Up</button>
                 </form>
             </div>
             <div class="card">
                 <p> Have an account? <a class="signup" href="./signIn.html">Sign In</a></p>
             </div>
         </div>
+        <script src="./js/authentication.js"></script>
     </body>
 </html>
