@@ -162,18 +162,6 @@
           }
         }
         </script>
-        <script>
-            var email = window.localStorage.getItem("email")
-            {
-                if(email == null)
-                {
-                    location.assign("signin.html");
-                }
-                else{
-                    document.querySelector("#user").innerHTML = `<i class="fa-solid fa-user"> </i> ${email}`
-                }
-            }
-        </script>
         <script src="./js/authentication.js"></script>
     </body>
 </html>

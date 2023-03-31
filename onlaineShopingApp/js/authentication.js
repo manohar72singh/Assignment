@@ -1,19 +1,7 @@
 const database = new Array;
 
 // if email exits
-function emailExits(email)
-{
-    return database.some(function(db){
-        return db.email === email;
-    });
-}
 
-function login(email,password)
-{
-    return database.some(function(db){
-        return db.email === email && db.password === password;
-    });
-}
 
 //validation signIn page
 function validationSignin(){
@@ -64,15 +52,14 @@ function validationSignin(){
     
     var email = username.value;
     var password = password.value;
-    console.log(login(email, password));
+    // console.log(login(email, password));
     if(login(email, password))
     {
         alert("Login Successful");
-        window.localStorage.setItem("email",email);
-        location.assign("home.html");
+        window.location.assign("../home.html");
     }
     else{
-        alert("please signup");
+       error.innerHTML+="invallid username and password"
         return;
     }
     username.value="";
@@ -92,7 +79,7 @@ function validationSignup(){
     var password = document.querySelector("#password");
     var re_password = document.querySelector('#re-password');
 
-    if(emailExits(mobemail))
+    if(emailExits(mobemail.value))
     {
         error.innerHTML = "Email already used";
         mobemail.style.border= "1px solid red";
@@ -216,7 +203,8 @@ function validationSignup(){
         username : username.value,
         password : password.value
     }
-    database.push(obj);
+    
+    localStorage.setItem('user', JSON.stringify(obj));
      
     // set input value is empaty
     mobemail.value="";
@@ -224,8 +212,9 @@ function validationSignup(){
     fullname.value = "";
     password.value ="";
     re_password.value ="";
-    console.log(database);
-    alert("signin succesfull");
+    alert("signup succesfull");
+    error.innerHTML+="signup succesfull";
+    error.style.color ="red";
 }
 //valiidate forgot password
 function validationForgotPassword(){
@@ -261,3 +250,39 @@ function logout(){
     location.assign("signin.html");
 }
 
+function emailExits(email)
+{
+    if(localStorage.getItem("user")!=null)
+    {
+        var userData = JSON.parse(localStorage.getItem("user"));
+        if(userData.email === email)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    else{
+        return false;
+    }
+
+}
+
+function login(email,password)
+{
+    if(localStorage.getItem("user")!=null)
+    {
+        var userData = JSON.parse(localStorage.getItem("user"));
+        if(userData.email===  email && userData.password=== password)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }  
+    }
+    else{
+        return false;
+    }
+}

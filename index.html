@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="./index.css">
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="subdiv">
+                <img class="img" src="./images/cover.gif">
+            </div>
+            <!-- login -->
+            <div class="box" id="signin">
+                <div id="logo" class="logo" title="Google">
+                    <img src="./images/profile.png">
+                </div>
+                <h2>Sign in</h2>
+                <p>Use a Google account</p>
+                <form>
+                    <div class="inputBox">
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                            onkeyup="this.setAttribute('value', this.value);"
+                            value=""
+                        >
+                        <label>E-mail Id Or Mobail number</label>
+                    </div>
+                    <div class="inputBox">
+                        <input
+                            type="password"
+                            id="password"
+                            required
+                            onkeyup="this.setAttribute('value', this.value);"
+                            value=""
+                        >
+                        <span class="eye">
+                            <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                        </span>
+                        <label>Password</label>
+                    </div>
+                    <div class="forgot">
+                        <button type="button" onclick="forgotPassword();">Forgot your Password?</button>
+                        <button type="button" onclick="signup();">Create New Account</button>
+                    </div>
+                    <input type="submit" value="Sign In">
+                </form>
+            </div>
+            <!-- Sign up -->
+            <div class="box" id="signup">
+                <div id="logo" class="logo" title="Google">
+                    <img src="./images/profile.png">
+                </div>
+                <h2>Sign Up</h2>
+                <p>Use a Google account</p>
+                <form>
+                    <div class="inputBox">
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                            onkeyup="this.setAttribute('value', this.value);"
+                            value=""
+                        >
+                        <label>E-mail Id Or Mobail number</label>
+                    </div>
+                    <div class="inputBox">
+                        <input
+                            type="text"
+                            id="fullName"
+                            required
+                            onkeyup="this.setAttribute('value', this.value);"
+                            value=""
+                        >
+                        <label>Full Name</label>
+                    </div>
+                    <div class="inputBox">
+                        <input
+                            type="password"
+                            id="password"
+                            required
+                            onkeyup="this.setAttribute('value', this.value);"
+                            value=""
+                        >
+                        <span class="eye">
+                            <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                        </span>
+                        <label>Password</label>
+                    </div>
+                    <div class="forgot">
+                        <button type="button" onclick="signin();">Do you have an Account?</button>
+                    </div>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+            <!-- forgot password -->
+            <div class="box" id="forgot-password">
+                <div id="logo" class="logo" title="Google">
+                    <img src="./images/profile.png">
+                </div>
+                <h2>Forgot Password</h2>
+                <p>Use a Google account</p>
+                <form>
+                    <div class="inputBox">
+                        <input
+                            type="email"
+                            id="password"
+                            required
+                            onkeyup="this.setAttribute('value', this.value);"
+                            value=""
+                        >
+                        <label>E-mail Id Or Mobail number</label>
+                    </div>
+                    <div class="forgot">
+                        <button type="button" onclick="signup();">Create New Account</button>
+                    </div>
+                    <input type="submit" value="send">
+                </form>
+            </div>
+        </div>
+        <script>
+            const togglePassword = document.querySelector("#togglePassword");
+            const password = document.querySelector("#password");
+
+            togglePassword.addEventListener("click", function (){
+                const type = password.getAttribute("type")==="password" ? "text" : "password";
+                password.setAttribute("type", type);
+                this.classList.toggle("fa-eye");
+            });
+        </script>
+    </body>
+</html>
